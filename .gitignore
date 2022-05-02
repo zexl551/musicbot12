@@ -1,2 +1,7 @@
-# Node
-node_modules/
+/nbproject/
+/target/
+/Playlists/
+/test/
+*.json
+*.txt
+nb*.xml

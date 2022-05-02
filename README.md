@@ -1,68 +1,60 @@
-# Music-bot
+<img align="right" src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
 
-A complete code to download for a music bot 🎧
+# JMusicBot
 
-Looking for a code for a music bot ? This fully open source code is made for your project !
+[![Downloads](https://img.shields.io/github/downloads/jagrosh/MusicBot/total.svg)](https://github.com/jagrosh/MusicBot/releases/latest)
+[![Stars](https://img.shields.io/github/stars/jagrosh/MusicBot.svg)](https://github.com/jagrosh/MusicBot/stargazers)
+[![Release](https://img.shields.io/github/release/jagrosh/MusicBot.svg)](https://github.com/jagrosh/MusicBot/releases/latest)
+[![License](https://img.shields.io/github/license/jagrosh/MusicBot.svg)](https://github.com/jagrosh/MusicBot/blob/master/LICENSE)
+[![Discord](https://discordapp.com/api/guilds/147698382092238848/widget.png)](https://discord.gg/0p9LSGoRLu6Pet0k)<br>
+[![CircleCI](https://img.shields.io/circleci/project/github/jagrosh/MusicBot/master.svg)](https://circleci.com/gh/jagrosh/MusicBot)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/gdu6nyte5psj6xfk/branch/master?svg=true)](https://ci.appveyor.com/project/jagrosh/musicbot/branch/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/jagrosh/musicbot/badge)](https://www.codefactor.io/repository/github/jagrosh/musicbot)
 
-If you need help with this project, to get support faster you can join the help server by just clicking [here](https://discord.gg/5cGSYV8ZZj).
+A cross-platform Discord music bot with a clean interface, and that is easy to set up and run yourself!
 
-*If you don't have any development knowledge, it is recommended to join the Discord support server to get help.*
+[![Setup](http://i.imgur.com/VvXYp5j.png)](https://jmusicbot.com/setup)
 
-### ⚡ Configuration
+## Features
+  * Easy to run (just make sure Java is installed, and run!)
+  * Fast loading of songs
+  * No external keys needed (besides a Discord Bot token)
+  * Smooth playback
+  * Server-specific setup for the "DJ" role that can moderate the music
+  * Clean and beautiful menus
+  * Supports many sites, including Youtube, Soundcloud, and more
+  * Supports many online radio/streams
+  * Supports local files
+  * Playlist support (both web/youtube, and local)
 
-Open the configuration file located in the main folder `config.js`.
+## Supported sources and formats
+JMusicBot supports all sources and formats supported by [lavaplayer](https://github.com/sedmelluq/lavaplayer#supported-formats):
+### Sources
+  * YouTube
+  * SoundCloud
+  * Bandcamp
+  * Vimeo
+  * Twitch streams
+  * Local files
+  * HTTP URLs
+### Formats
+  * MP3
+  * FLAC
+  * WAV
+  * Matroska/WebM (AAC, Opus or Vorbis codecs)
+  * MP4/M4A (AAC codec)
+  * OGG streams (Opus, Vorbis and FLAC codecs)
+  * AAC streams
+  * Stream playlists (M3U and PLS)
 
-```js
-module.exports = {
-    app: {
-        px: 'Jay',
-        token: 'OTcwNjE3ODQzMjE5NTc0Nzg1.Ym-kTw.Xb7wFJ3OeeFQ-BMTZ8fSH6kh9AM',
-        playing: 'Maded by Zexl ❤️'
-    },
+## Example
+![Loading Example...](https://i.imgur.com/kVtTKvS.gif)
 
-    opt: {
-        DJ: {
-            enabled: false,
-            roleName: 'Jay',
-            commands: []
-        },
-        maxVol: 100,
-        loopMessage: false,
-        discordPlayer: {}
-    }
-};
-```
+## Setup
+Please see the [Setup Page](https://jmusicbot.com/setup) to run this bot yourself!
 
-Basic configuration
+## Questions/Suggestions/Bug Reports
+**Please read the [Issues List](https://github.com/jagrosh/MusicBot/issues) before suggesting a feature**. If you have a question, need troubleshooting help, or want to brainstorm a new feature, please start a [Discussion](https://github.com/jagrosh/MusicBot/discussions). If you'd like to suggest a feature or report a reproducible bug, please open an [Issue](https://github.com/jagrosh/MusicBot/issues) on this repository. If you like this bot, be sure to add a star to the libraries that make this possible: [**JDA**](https://github.com/DV8FromTheWorld/JDA) and [**lavaplayer**](https://github.com/sedmelluq/lavaplayer)!
 
-- `app/px`, the prefix that will be set to use the bot
-- `app/token`, the token of the bot available on the [Discord Developers](https://discordapp.com/developers/applications) section
-- `app/playing`, the activity of the bot
-
-DJ mode configuration
-
-- `opt/DJ/enabled`, whether the DJ mode should be activated or not 
-- `opt/DJ/roleName`, the name of the DJ role to be used
-- `opt/DJ/commands`, the list of commands limited to members with the DJ role
-
-Advanced configuration
-
-- `opt/maxVol`, the maximum volume that users can define
-- `opt/loopMessage`, if the message that a music is played should be sent when it is looped
-- `opt/discordPlayer`, options used by discord-player
-
-### 📑 Installation
-
-To use the project correctly you will need some tools.
-
-[FFmpeg](https://www.ffmpeg.org) to process audio
-
-[Node JS](https://nodejs.org/en/) (v16) for environment
-
-Without forgetting of course the code editor ^^
-
-Realized with ❤️ by [ZerioDev](https://github.com/ZerioDev).
-
-Please do not withdraw the license and keep the credits on this project.
-
-To have full access to the project and to be able to withdraw the credits a small donation is accepted. 
+## Editing
+This bot (and the source code here) might not be easy to edit for inexperienced programmers. The main purpose of having the source public is to show the capabilities of the libraries, to allow others to understand how the bot works, and to allow those knowledgeable about java, JDA, and Discord bot development to contribute. There are many requirements and dependencies required to edit and compile it, and there will not be support provided for people looking to make changes on their own. Instead, consider making a feature request (see the above section). If you choose to make edits, please do so in accordance with the Apache 2.0 License.
